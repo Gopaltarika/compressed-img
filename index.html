@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Compressor</h1>
+        <div class="upload-box">
+            <label for="imageUpload" class="upload-label">Upload Image</label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+        <div id="imagePreview" class="preview-box">
+            <h2>Preview</h2>
+            <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+            <p id="fileSize"></p>
+            <a id="downloadLink" style="display: none;" class="download-btn" download>
+                <button>Download Compressed Image</button>
+            </a>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
